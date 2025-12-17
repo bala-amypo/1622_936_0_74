@@ -13,34 +13,34 @@ public class studententity{
  private String password;
  private String email;
  private Date created;
- public void setid(Integer id){
+ public void setId(Integer id){
     this.id=id;
  }
- public void setusername(String username){
+ public void setUsername(String username){
     this.username=username;
  }
- public void setemail(String email){
+ public void setEmail(String email){
     this.email=email;
  }
- public void setpassword(String password){
+ public void setPassword(String password){
     this.password=password;
  }
- public void setcreated(Date created){
+ public void setCreated(Date created){
     this.created=created;
  }
- public Integer getid(){
+ public Integer getId(){
     return id;
  }
- public String getusername(){
+ public String getUsername(){
     return username;
  }
- public String getemail(){
+ public String getEmail(){
     return email;
  }
- public String getpassword(){
+ public String getPassword(){
     return password;
  }
- public Date getcreated(){
+ public Date getCreated(){
     return created;
  }
  public studententity(){
