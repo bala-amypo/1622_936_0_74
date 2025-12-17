@@ -9,8 +9,22 @@ public class studententity{
  public void setid(Integer id){
     this.id=id;
  }
- public void setname(String username){
-    this.name=name;
+ public void setusername(String username){
+    this.username=username;
  }
- public void setemail(str)
+ public void setemail(String email){
+    this.email=email;
+ }
+ public void setpassword(String password){
+    this.password=password;
+ }
+ public void setcreated(Date created){
+    this.created=created;
+ }
+ public Integer getid(){
+    return this.id=id;
+ }
+ public String getusername(){
+    return this.username
+ }
 }
