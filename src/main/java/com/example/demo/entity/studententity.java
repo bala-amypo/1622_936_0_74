@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+import.java.sql.Date;
 @Entity
 public class studententity{
  private Integer id;
@@ -35,5 +36,15 @@ public class studententity{
  }
  public Date getcreated(){
     return created;
+ }
+ public studententity(){
+
+ }
+ public studententity(Integer id,String username,String email,String password,Date created){
+    this.id=id;
+    this.username=username;
+    this.email=email;
+    this.password=password;
+    this.created=created;
  }
 }
