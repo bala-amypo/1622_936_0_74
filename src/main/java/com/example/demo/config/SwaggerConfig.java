@@ -10,11 +10,11 @@ import java.util.List;
 public class SwaggerConfig {
 
     @Bean
-    public Swagger customOpenAPI() {
-        return new Swagger()
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
                 // You need to change the port as per your server
                 .servers(List.of(
-                        new Server().url("https://9233.pro604cr.amypo.ai/")
+                        new Server().url("https://9295.408procr.amypo.ai/")
                 ));
         }
 }
