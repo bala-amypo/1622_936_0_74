@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class studentserviceimpl implements studentservice{
     @Autowired studentrepo student;
-    @Override
+    @Override;
    public studententity postdata(studententity stu){
     return student.save(stu);
         }
