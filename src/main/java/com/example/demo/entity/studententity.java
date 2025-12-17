@@ -22,9 +22,18 @@ public class studententity{
     this.created=created;
  }
  public Integer getid(){
-    return this.id=id;
+    return id;
  }
  public String getusername(){
-    return this.username
+    return username;
+ }
+ public String getemail(){
+    return email;
+ }
+ public String getpassword(){
+    return password;
+ }
+ public Date getcreated(){
+    return created;
  }
 }
