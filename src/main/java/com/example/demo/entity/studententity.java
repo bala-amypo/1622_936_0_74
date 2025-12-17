@@ -1,7 +1,8 @@
 package com.example.demo.entity;
-import.java.sql.Date;
+import java.sql.Date;
 @Entity
 public class studententity{
+ 
  private Integer id;
  private String username;
  private String password;
