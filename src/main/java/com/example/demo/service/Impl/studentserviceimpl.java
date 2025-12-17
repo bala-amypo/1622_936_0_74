@@ -3,5 +3,8 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.studentservice;
 @Service
 public class studentserviceimpl implements studentservice{
-           studententity postdata(studententity stu);
+    @Autowired studentrepo student;
+   public studententity postdata(studententity stu){
+
+        }
 }
