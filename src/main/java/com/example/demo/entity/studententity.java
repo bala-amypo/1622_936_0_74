@@ -6,4 +6,11 @@ public class studententity{
  private String password;
  private String email;
  private Date created;
+ public void setid(Integer id){
+    this.id=id;
+ }
+ public void setname(String username){
+    this.name=name;
+ }
+ public void setemail(str)
 }
