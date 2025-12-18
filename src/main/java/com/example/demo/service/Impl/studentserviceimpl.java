@@ -22,7 +22,7 @@ public class studentserviceimpl implements studentservice{
       return "Deleted Successfully";
    }
    @Override
-    public List<studententity>getdata(int id){
+    public studententity getdata(int id){
        return student.findById(id); 
     }
 }
