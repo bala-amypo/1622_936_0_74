@@ -30,6 +30,8 @@ public class studentcontroller{
    public studententity gdata(@PathVariable int id){
     return ser.getdata(id);
    }
-  @PutMapping("/post{id}")
-  public studententity pdata(@PathVariable int id,@RequestBody studententity stu)
+  @PutMapping("/put{id}")
+  public studententity pdata(@PathVariable int id,@RequestBody studententity stu){
+    return ser.putdata(id,stu);
+  }
 }
