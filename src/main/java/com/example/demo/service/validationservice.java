@@ -3,5 +3,5 @@ import com.example.demo.entity.validationentity;
 
 public interface validationservice{
 validationentity postdata(validationentity val);
-  stentity getdata(int id);
+  validationentity getdata(int id);
 }
