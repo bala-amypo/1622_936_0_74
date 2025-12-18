@@ -26,8 +26,8 @@ public class studentcontroller{
     return ser.deletedata(id);
   }
   @GetMapping("/find{id}")
-   public List<studententity>findata(){
-    return ser.getdata();
+   public studententity gdata(@PathVariable int id){
+    return ser.getdata(id);
    }
 
 }
