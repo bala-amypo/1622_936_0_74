@@ -63,7 +63,7 @@ private int age;
  @Email(message= "Email is not valid")String email,
  @Size(min = 2,max = 6,message ="Password must be 2 to 6 characters")
  @NotNull(message = "Password is mandatory")String password,
- @Max(30)@Positive(message = "Age must be a positive number")int age){
+ @Max(30) @Positive(message = "Age must be a positive number")int age){
     this.id=id;
     this.username=username;
     this.email=email;
