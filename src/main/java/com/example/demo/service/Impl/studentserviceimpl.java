@@ -29,6 +29,8 @@ public class studentserviceimpl implements studentservice{
    public studententity putdata(int id,studententity stu){
    if(student.existsById(id)){
      stu.setId(id);
+     return student.save(stu);
    }
+   return null;
    }
 }
