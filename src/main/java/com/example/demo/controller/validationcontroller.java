@@ -16,7 +16,7 @@ public class validationcontroller{
   }
    }
   @GetMapping("/findd{id}")
-   public studententity gdata(@PathVariable int id){
+   public validationentity gdata(@PathVariable int id){
     return ser.getdata(id);
    }
 }
