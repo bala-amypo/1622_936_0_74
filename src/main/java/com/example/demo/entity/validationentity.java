@@ -24,7 +24,7 @@ private String password;
  @Max(30)
  @Positive(message = "Age must be a positive number")
 private int age;
- public void setId(Integer id){
+ public void setId(Long id){
     this.id=id;
  }
  public void setUsername(String username){
@@ -36,10 +36,10 @@ private int age;
  public void setPassword(String password){
     this.password=password;
  }
- public void set(Date created){
-    this.created=created;
+ public void setAge(int age){
+    this.age=age;
  }
- public Integer getId(){
+ public Long getId(){
     return id;
  }
  public String getUsername(){
@@ -53,5 +53,16 @@ private int age;
  }
  public int getAge(){
     return age;
+ }
+ public validationentity(){
+
+ }
+ public validationentity(Long id,@NotNull
+ @Size(min = 2,max = 6,message = "must be 2 to 6 characters")String username,String email,String password,int age){
+    this.id=id;
+    this.username=username;
+    this.email=email;
+    this.password=password;
+    this.age=age;
  }
 }
