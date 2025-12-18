@@ -27,6 +27,8 @@ public class studentserviceimpl implements studentservice{
     }
    @Override
    public studententity putdata(int id,studententity stu){
-    return student.save(id,stu);
+   if(student.existsById(id)){
+     stu.setId(id);
+   }
    }
 }
