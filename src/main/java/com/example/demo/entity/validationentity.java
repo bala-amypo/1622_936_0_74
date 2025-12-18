@@ -6,23 +6,52 @@ import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Email;
 @Entity
 public class validationentity{
-@Id
-@GeneratedValue(strategy=GenerationType.IDENTITY)
+ @Id
+ @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
-@NotNull
-@Size(min = 2,max = 6,message = "must be 2 to 6 characters")
+ @NotNull
+ @Size(min = 2,max = 6,message = "must be 2 to 6 characters")
 private String username;
-@Email(message "Email is not valid")
+ @Email(message "Email is not valid")
 private String email;
-@Size(min = )
-@NotNull(message = "Password is mandatory")
+ @Size(min = 2,max = 6)
+ @NotNull(message = "Password is mandatory")
 private String password;
-@Max(30)
-@Positive(message = "Age must be a positive number")
+ @Max(30)
+ @Positive(message = "Age must be a positive number")
 private int age;
+ public void setId(Integer id){
+    this.id=id;
+ }
+ public void setUsername(String username){
+    this.username=username;
+ }
+ public void setEmail(String email){
+    this.email=email;
+ }
+ public void setPassword(String password){
+    this.password=password;
+ }
+ public void set(Date created){
+    this.created=created;
+ }
+ public Integer getId(){
+    return id;
+ }
+ public String getUsername(){
+    return username;
+ }
+ public String getEmail(){
+    return email;
+ }
+ public String getPassword(){
+    return password;
+ }
+ public int getAge(){
+    return age;
+ }
 }
