@@ -25,4 +25,8 @@ public class studentserviceimpl implements studentservice{
     public studententity getdata(int id){
        return student.findById(id).orElse(null); 
     }
+   @Override
+   public studententity putdata(int id,studententity stu){
+    return student.save(id,stu);
+   }
 }
