@@ -16,4 +16,8 @@ public class studentserviceimpl implements studentservice{
    public List<studententity>getalldata(){
       return student.findAll();
    }
+   @Override
+   public String deletedata(int id){
+      return student.deleteById();
+   }
 }

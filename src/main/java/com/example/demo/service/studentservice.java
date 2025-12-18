@@ -5,4 +5,5 @@ import java.util.List;
 public interface studentservice {
     studententity postdata(studententity stu);
     List<studententity>getalldata();
+    String deletedata(int id);
 }
