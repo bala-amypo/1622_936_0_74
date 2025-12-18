@@ -23,6 +23,6 @@ public class studentserviceimpl implements studentservice{
    }
    @Override
     public studententity getdata(int id){
-        
+       return student.findById(id); 
     }
 }
