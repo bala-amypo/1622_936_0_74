@@ -14,7 +14,7 @@ public class validationentity{
  @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
  @NotNull
- @Size(min = 2,max = 6,message = "must be 2 to 6 characters")
+ @Size(min = 1,max = 6,message = "must be 2 to 6 characters")
 private String username;
  @Email(message ="Email is not valid")
 private String email;
@@ -59,7 +59,7 @@ private int age;
  }
  public validationentity(Long id,
  @NotNull
- @Size(min = 2,max = 6,message = "must be 2 to 6 characters")String username,
+ @Size(min = 1,max = 6,message = "must be 2 to 6 characters")String username,
  @Email(message= "Email is not valid")String email,
  @Size(min = 2,max = 6,message ="Password must be 2 to 6 characters")
  @NotNull(message = "Password is mandatory")String password,
