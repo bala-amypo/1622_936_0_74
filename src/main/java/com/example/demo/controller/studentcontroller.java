@@ -6,6 +6,8 @@ import com.example.demo.entity.studententity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import java.util.List;
+
 @RestController
 public class studentcontroller{
   @Autowired studentservice ser;
