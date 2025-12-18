@@ -3,5 +3,5 @@ import com.example.demo.entity.studententity;
 
 public interface studentservice {
     studententity postdata(studententity stu);
-    List<studententity>getalldata
+    List<studententity>getalldata();
 }
