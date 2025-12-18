@@ -5,11 +5,16 @@ import com.example.demo.service.studentservice;
 import com.example.demo.entity.studententity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class studentcontroller{
   @Autowired studentservice ser;
   @PostMapping("/post")
   public studententity senddata(@RequestBody studententity stu ){
     return ser.postdata(stu);
+  }
+  @GetMapping("/get")
+  public List<studententity>getdata(){
+    return ser.getalldata();
   }
 }
