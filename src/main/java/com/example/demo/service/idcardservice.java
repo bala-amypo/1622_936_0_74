@@ -1,6 +1,6 @@
 package com.example.demo.service;
-import com.example.demo.entity.studententity;
-import java.util.List;
+import com.example.demo.entity.idcardentity;
 
-public interface studentservice {
-    studententity postdata(studententity stu);
+public interface idcardservice {
+    idcardentity postdata(idcardentity stu);
+}
