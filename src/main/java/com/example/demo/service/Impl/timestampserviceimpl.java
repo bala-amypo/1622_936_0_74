@@ -12,4 +12,5 @@ public class timestampserviceimpl implements timestampservice{
    public timestampentity postdata(timestampentity time){
     return student.save(time);
         }
+        
 }
