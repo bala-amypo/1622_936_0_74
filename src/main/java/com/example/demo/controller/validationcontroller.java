@@ -19,4 +19,5 @@ public class validationcontroller{
    public validationentity gdata(@Valid @PathVariable Long id){
     return ser.getdata(id);
    }
+   }
 }
