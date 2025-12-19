@@ -17,7 +17,7 @@ public class validationcontroller{
   }
    
   @GetMapping("/findd{id}")
-   public validationentity gdata(@Valid @PathVariable Long id){
+   public validationentity ggdata(@PathVariable Long id){
     return ser.getdata(id);
    }
 
