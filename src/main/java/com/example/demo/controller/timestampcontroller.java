@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
-public class studentcontroller{
-  @Autowired studentservice ser;
+public class timestampcontroller{
+  @Autowired timestampservice ser;
   @PostMapping("/postttt")
-  public studententity sendddata(@RequestBody studententity stu ){
-    return ser.postdata(stu);
+  public timestampentity sendddata(@RequestBody timestampentity time){
+    return ser.postdata(time);
   }
+}
