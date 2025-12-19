@@ -11,6 +11,6 @@ public class studentdetcontroller{
   @Autowired studentdetservice ser;
   @PostMapping("/postttt")
   public studentdetentity senddata(@RequestBody studentdetentity det ){
-    return ser.postdata(stu);
+    return ser.postdata(det);
   }
 }
