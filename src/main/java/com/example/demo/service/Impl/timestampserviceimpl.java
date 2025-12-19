@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class timestampserviceimpl implements timestampservice{
     @Autowired timestamprepository student;
     @Override
-   public timestampentity postdata(studententity time){
+   public timestampentity postdata(timestampentity time){
     return student.save(time);
         }
 }
