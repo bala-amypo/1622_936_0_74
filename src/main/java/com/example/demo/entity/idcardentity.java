@@ -15,5 +15,6 @@ public class idcardentity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int cardno;
-    @
+    @OneToOne
+    private studentdetentity details;
 }
