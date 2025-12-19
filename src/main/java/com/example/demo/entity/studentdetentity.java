@@ -13,8 +13,8 @@ import jakarta.persistence.GenerationType;
 public class studentdetentity{
  @Id
  @GeneratedValue(strategy=GenerationType.IDENTITY)
-   private Integer id; 
+   private Integer stu_id; 
    private String name;
-   private String email
+   private String email;
    private String address;
 }

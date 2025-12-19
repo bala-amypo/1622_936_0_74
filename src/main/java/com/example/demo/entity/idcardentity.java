@@ -18,6 +18,6 @@ public class idcardentity{
     private Integer id;
     private int cardno;
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "stu_id")
     private studentdetentity details;
 }
