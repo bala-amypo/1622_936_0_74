@@ -6,6 +6,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 @Entity
 @Data
 @AllArgsConstructor
@@ -16,5 +18,6 @@ public class idcardentity{
     private Integer id;
     private int cardno;
     @OneToOne
+    @JoinColumn(name = "id")
     private studentdetentity details;
 }
