@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class idcardcontroller{
   @Autowired idcardservice ser;
   @PostMapping("/posts")
-  public idcardentity senddata(@RequestBody idcardentity stu ){
-    return ser.postdata(stu);
+  public idcardentity senddata(@RequestBody idcardentity det ){
+    return ser.postdata(det);
   }
   }
