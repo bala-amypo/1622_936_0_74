@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
-import jakarta.persistence.
+import jakarta.persistence.PrePersist;
 @Entity
 @Data
 @AllArgsConstructor
@@ -21,5 +21,9 @@ public class timestampentity{
  private LocalDateTime createdat;
  private LocalDateTime updatedat;
  @PrePersist
-
+ public void Oncreate(){
+ LocalDateTime now =new LocalDateTime();
+ this.createdat=now;
+ this.updatedat=now;
+ }
 }
