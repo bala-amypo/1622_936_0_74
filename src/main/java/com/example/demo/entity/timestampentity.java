@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
+import jakarta.persistence.
 @Entity
 @Data
 @AllArgsConstructor
@@ -19,5 +20,6 @@ public class timestampentity{
  private String email;
  private LocalDateTime createdat;
  private LocalDateTime updatedat;
- 
+ @PrePersist
+
 }
