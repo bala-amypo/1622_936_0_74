@@ -9,8 +9,12 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class validationentity{
  @Id
  @GeneratedValue(strategy=GenerationType.IDENTITY)

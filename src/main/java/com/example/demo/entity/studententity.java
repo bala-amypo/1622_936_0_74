@@ -5,8 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.util.Date;
 import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class studententity{
  @Id
  @GeneratedValue(strategy=GenerationType.IDENTITY)
