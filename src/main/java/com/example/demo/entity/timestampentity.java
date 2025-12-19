@@ -3,6 +3,10 @@ import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import java.time.LocalDateTime;
 @Entity
 @Data
 @AllArgsConstructor
@@ -10,9 +14,9 @@ import lombok.NoArgsConstructor;
 public class timestampentity{
 @Id
  @GeneratedValue(strategy=GenerationType.IDENTITY)
- private Integer id;
+ private Long id;
  private String username;
- private String password;
  private String email;
- private Date created;
+ private LocalDateTime createdat;
+ private LocalDateTime updatedat;
 }
