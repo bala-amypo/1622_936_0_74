@@ -19,4 +19,5 @@ public class timestampentity{
  private String email;
  private LocalDateTime createdat;
  private LocalDateTime updatedat;
+ 
 }
