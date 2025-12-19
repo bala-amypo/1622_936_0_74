@@ -13,6 +13,6 @@ public class validationserviceimpl implements validationservice{
         }
    @Override
     public validationentity getdata(int id){
-       return student.findById(id).orElse(null); 
+       return student.findById(id).orElseThrow(()->new V); 
     }
 }
