@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 
 public class studentdetentity{
-   private  id 
+   private Integer id 
     name
     address
 }
