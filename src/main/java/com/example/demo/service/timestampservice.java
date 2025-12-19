@@ -3,5 +3,5 @@ import com.example.demo.entity.timestampentity;
 
 
 public interface timestampservice {
-    studententity postdata(timestampentity time);
+    timestampentity postdata(timestampentity time);
 }
