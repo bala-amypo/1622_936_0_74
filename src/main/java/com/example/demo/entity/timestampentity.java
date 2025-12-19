@@ -27,5 +27,9 @@ public class timestampentity{
  this.createdat=now;
  this.updatedat=now;
  }
- 
+ @PreUpdate
+ public void Onupdate(){
+ LocalDateTime now = LocalDateTime().now();
+ this.updatedat=now;
+ }
 }
